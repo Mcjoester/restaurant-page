@@ -1,0 +1,352 @@
+
+@font-face {
+    font-family: "Fraunces";
+    src: url('./Fraunces_9pt-Black.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: "Fraunces";
+    src: url('./Fraunces_72pt-BoldItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+  }
+
+@font-face {
+    font-family: "Roboto";
+    src: url('./Roboto-Bold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url('./Montserrat-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #202124;
+    color: white;
+}
+
+.logo {
+    font-family: "Fraunces", serif;
+    font-size: 48px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+nav button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    background-color: #202124;
+    color: white;
+    letter-spacing: 4px;
+}
+
+nav button:hover {
+    text-decoration: underline;
+    text-decoration-color: green;
+    text-decoration-style:solid;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px; 
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+
+.home-div {
+    width: 100%;
+}
+
+.hero-img-container {
+    width: 100%;
+    position: relative;
+}
+
+.hero-img-container::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    filter: brightness(110%) saturate(110%) hue-rotate(0deg);
+    background-color: rgba(0,0,0,0.8);
+    opacity: 1;
+    mix-blend-mode: multiply;
+}
+
+.hero-img {
+    background: url('./r-background-resized.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    overflow: hidden;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    vertical-align: middle;
+}
+
+
+.waves {
+    position: absolute;
+    left: 0;
+    top: 60%;
+    z-index: 2;
+}
+
+.hero-title {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+    letter-spacing: 10px;
+}
+
+.hero-p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 40px;
+    font-style: normal;
+    letter-spacing: 4px;
+}
+
+
+.homeContent-container {
+    position: absolute;
+    top: 35%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: #fff; 
+    padding: 10px 20px; 
+    font-size: 20px; 
+    text-align: center;
+    z-index: 1;
+    border-radius: 20px;
+    padding: 25px;
+    width: 100%;
+}
+
+.about-wrapper {
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+.about-container {
+    width: 700px;
+    margin: 45px 0;
+    padding: 45px 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: black 10px 10px;
+    background-color: white;
+    position: absolute;
+    z-index: 2;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.about-title {
+    font-family: "Fraunces", serif;
+    margin-bottom: 10px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.about-content {
+    padding-bottom: 10px;
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+}
+
+/* MENU PAGE */ 
+
+.menu-div {
+    padding: 40px 60px;
+}
+
+.menu-header {
+    width: 100%;
+    height: 120px;
+    border-radius: 40px;
+    padding-left: 40px;
+    background-color:#037a69;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    font-family: "Fraunces", serif;
+    margin-bottom: 40px;
+}
+
+.tacos-header-div {
+    width: 100%;
+    height: 100px;
+    display: flex;;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color:#037a69;
+    font-family: "Fraunces", serif;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+
+.tacos-content-div {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.taco-card {
+    width: 500px;
+    padding-left: 40px;
+}
+
+.card-img-div {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.chicken-taco-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.taco-name-price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.taco-name, .taco-price {
+    font-family: "Fraunces", serif;
+    font-size: 20px;
+}
+
+.taco-desc {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+}
+
+/* Contact Page */ 
+
+.contact-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 60px;
+    gap: 60px;
+}
+
+.contact-card, .hours-card {
+    width: 450px;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: black 10px 10px;
+    padding: 20px 20px;
+    background-color: white;
+}
+
+.map-card {
+    width: 950px;
+    border: 5px solid black;
+    border-radius: 10px;
+    box-shadow: black 20px 20px;
+}
+
+.contact-header, .hours-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contact-title, .hours-title {
+    font-family: "Fraunces", serif;
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+
+.phone-container, .email-container, .address-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.phone-container, .email-container, .closed-content-container, .closed-content-container2 {
+    margin-bottom: 20px;
+}
+
+.phone-svg, .email-svg, .address-svg {
+    width: 20px;
+}
+
+.phone-number, .email-address, .address {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.hours-content-container, .closed-content-container, .closed-content-container2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.open-days, .open-hours, .closed-days, .closed-hours, .closed-days2, .closed-hours2 {
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 25px;
+    font-size: 18px;
+}
+
+.map-png {
+    width: 100%;
+    object-fit: cover;
+}
+
+
